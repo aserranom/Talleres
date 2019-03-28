@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 
 import "./styles.css";
 
-function App() {
-  const name = "Álvaro";
+function App(props) {
+  const { name } = props;
   return (
     <div className="App">
       <h1>Hello {name}</h1>
@@ -14,4 +14,4 @@ function App() {
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<App name="Álvaro" />, rootElement);
