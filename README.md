@@ -1,2 +1,0 @@
-# Talleres
-Created with CodeSandbox
