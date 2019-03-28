@@ -3,8 +3,7 @@ import ReactDOM from "react-dom";
 
 import "./styles.css";
 
-function App(props) {
-  const { name } = props;
+function App({ name }) {
   return (
     <div className="App">
       <h1>Hello {name}</h1>
