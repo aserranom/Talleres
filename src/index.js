@@ -3,26 +3,21 @@ import ReactDOM from "react-dom";
 
 import "./styles.css";
 
-function Subtitle() {
-  return <h2>Start editing to see some magic happen!</h2>;
-}
-
 function Vector({ vector }) {
   return (
     <div className="vector">
       {vector.map(cell => (
-        <div className="cell">{cell}</div>
+        <div className="cell" />
       ))}
     </div>
   );
 }
 
 function App({ name }) {
-  const vector = [0, 0, 0, 0, 0];
+  const vector = Array(12).fill(false);
   return (
     <div className="App">
       <h1>Hello {name}</h1>
-      <Subtitle />
       <Vector vector={vector} />
     </div>
   );
