@@ -7,11 +7,17 @@ function Subtitle() {
   return <h2>Start editing to see some magic happen!</h2>;
 }
 
+function Vector({ vector }) {
+  return <div>{JSON.stringify(vector)}</div>;
+}
+
 function App({ name }) {
+  const vector = [0, 0, 0, 0, 0];
   return (
     <div className="App">
       <h1>Hello {name}</h1>
       <Subtitle />
+      <Vector vector={vector} />
     </div>
   );
 }
