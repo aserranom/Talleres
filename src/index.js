@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
 
 import "./styles.css";
@@ -13,14 +13,16 @@ function Vector({ vector }) {
   );
 }
 
-function App({ name }) {
-  const vector = Array(16).fill(false);
-  return (
-    <div className="App">
-      <h1>Hello {name}</h1>
-      <Vector vector={vector} />
-    </div>
-  );
+class App extends Component {
+  render() {
+    const vector = Array(16).fill(false);
+    return (
+      <div className="App">
+        <h1>Hello {this.props.name}</h1>
+        <Vector vector={vector} />
+      </div>
+    );
+  }
 }
 
 const rootElement = document.getElementById("root");
