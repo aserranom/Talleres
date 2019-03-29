@@ -9,9 +9,9 @@ function Subtitle() {
 
 function Vector({ vector }) {
   return (
-    <div>
+    <div className="vector">
       {vector.map(cell => (
-        <div>{cell}</div>
+        <div className="cell">{cell}</div>
       ))}
     </div>
   );

@@ -1,4 +1,22 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  width: 100%;
+}
+
+.vector {
+  border: 1px solid blue;
+  padding: 4px;
+}
+
+.cell {
+  border: 1px solid red;
+  padding: 4px;
 }
