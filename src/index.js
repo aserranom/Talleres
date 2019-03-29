@@ -8,7 +8,13 @@ function Subtitle() {
 }
 
 function Vector({ vector }) {
-  return <div>{JSON.stringify(vector)}</div>;
+  return (
+    <div>
+      {vector.map(cell => (
+        <div>{cell}</div>
+      ))}
+    </div>
+  );
 }
 
 function App({ name }) {
