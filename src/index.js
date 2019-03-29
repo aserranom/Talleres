@@ -14,7 +14,7 @@ function Vector({ vector }) {
 }
 
 function App({ name }) {
-  const vector = Array(12).fill(false);
+  const vector = Array(16).fill(false);
   return (
     <div className="App">
       <h1>Hello {name}</h1>
